@@ -1,0 +1,13 @@
+<div class = "row rowHome">
+	<div class = "col-xs-12">
+		<div class = "home clearfix">
+			<h1> I will be a list of all the images</h1>
+			<div ng-repeat="images in controller.images" class="allImages">
+				<figure class = "col-xs-4">
+					<a href="#/detail/{{images._id}}"><img src = {{images.url}}>
+					<figcaption>{{images.title}}</figcaption></a>
+				</figure>	
+			</div>
+		</div>
+	</div>
+</div>

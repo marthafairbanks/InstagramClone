@@ -1,0 +1,27 @@
+.rowDetail {
+			margin-top: 5%;
+	.detail {
+		background-color: white;
+		width: 80%;
+		margin: 0px auto;
+		display: block;
+		.left {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			.bigImage {
+				img {
+					width: 100%
+				}
+			}
+		}
+		.right {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			.imageDetails {
+				margin: 20px;
+				
+
+			}
+		}
+	}
+}

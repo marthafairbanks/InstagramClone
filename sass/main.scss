@@ -1,0 +1,19 @@
+$gray: #474747;
+$greenBlue: #45ADA8;
+$orange: #fe4b2e;
+
+@import "headerFooter";
+@import "home";
+@import "detail";
+@import "addEdit";
+
+
+body{
+	background: $gray;
+	h1 {
+		font-family: 'Sansita One', cursive;
+		padding-top: 40px;
+	}
+}
+
+

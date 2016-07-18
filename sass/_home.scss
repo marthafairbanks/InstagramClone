@@ -1,0 +1,22 @@
+.rowHome {
+			margin-top: 5%;
+	.home {
+		background-color: white;
+		width: 80%;
+		margin: 0px auto;
+		display: block;
+		h1 {
+			text-align: center;
+			color: $orange;
+		}
+		.allImages {
+			figure {
+				img {
+				width: 100%;
+				border-radius: 10px;
+				}
+
+			}
+		}
+	}	
+}

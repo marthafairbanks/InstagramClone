@@ -1,0 +1,24 @@
+<div class = "row rowAddEdit">
+	<div class = "col-xs-12">
+		<div class = "addEdit">
+			<h1>Add & Edit Your Images</h1>
+			<form ng-submit="controller.submit()">
+				<fieldset class="form-group">
+					<label for="imageTitle">Image Title</label>
+			    	<input type="text" class="form-control" ng-model="controller.form.title" id="imageTitle" placeholder="Enter image title">	
+			  	</fieldset>
+			  	<fieldset class="form-group">
+			    	<label for="filePath">File Path</label>
+			    	<input type="text" class="form-control" ng-model="controller.form.url" id="filePath" placeholder="Enter image file path">
+			  	</fieldset>
+			  	<fieldset class="form-group">
+    				<label for="imageDescription">Image Description</label>
+    				<textarea class="form-control" id="imageDescription" ng-model="controller.form.description" rows="10"></textarea>
+  				</fieldset>
+  				<fieldset>
+  					<button type="submit" class="btn btn-primary">Submit</button>
+  				</fieldset>
+			</form>  	
+		</div>
+	</div>
+</div>

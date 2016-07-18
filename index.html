@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='en' ng-app="instagram">
+<head>
+     <meta charset='utf-8'>
+     <title>Instagram Clone</title>
+
+    <meta name='description' content='Instagram Clone'>
+    <meta name='author' content='Martha Fairbanks'>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Sansita+One" rel="stylesheet">
+
+	<!--CSS style sheet-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="https://use.fontawesome.com/247c14072a.js"></script>
+</head>
+
+<body id="body">
+    
+    <div class = "container-fluid">    
+        <header>
+            <div class = "row rowHeader">
+                <div class = "col-xs-12">
+                    <div class = "circle">
+                        <i class="fa fa-camera cameraIcon" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class = "row rowNav">
+                <nav>
+                    <div class = "col-xs-6 left">
+                       <span><a href="#/">Home</a></span>
+                    </div>
+                    <div class = "col-xs-6 right">   
+                        <span><a ui-sref="addedit">Add & Edit</a></span>
+                    </div>    
+                </nav>
+            </div>
+        </header>   
+        
+
+        <main ui-view="main">
+        </main>
+    </div>    
+
+
+<!--link to JS file-->
+<script src="js/main.js"></script>
+<script src="js/factories/api.js"></script>
+<script src="js/directives/directive.js"></script>
+<script src="js/controllers/mainControl.js"></script>
+<script src="js/controllers/addEditControl.js"></script>
+<script src="js/controllers/detailControl.js"></script>
+</body>
+</html>

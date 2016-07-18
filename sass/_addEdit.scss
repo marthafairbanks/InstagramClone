@@ -1,0 +1,33 @@
+.rowAddEdit {
+			margin-top: 5%;
+	.addEdit {
+		background-color: white;
+		height: 575px;
+		width: 80%;
+		margin: 0px auto;
+		display: block;
+		h1 {
+			text-align: center;
+			color: $orange;
+		}
+		form {
+			padding:40px;
+			color: $gray;
+			label {
+				color: $greenBlue;
+			}
+			input, textarea {
+				border: 1px solid $orange;
+			}
+			::-webkit-input-placeholder {
+   				color: lighten($gray, 20);
+   				font-style: italic;
+			}
+			button {
+				background-color: $greenBlue;
+				border: 1px solid $orange;
+			}
+
+		}
+	}
+}
