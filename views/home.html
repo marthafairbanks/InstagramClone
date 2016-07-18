@@ -1,11 +1,21 @@
 <div class = "row rowHome">
 	<div class = "col-xs-12">
 		<div class = "home clearfix">
-			<h1> I will be a list of all the images</h1>
 			<div ng-repeat="images in controller.images" class="allImages">
 				<figure class = "col-xs-4">
-					<a href="#/detail/{{images._id}}"><img src = {{images.url}}>
-					<figcaption>{{images.title}}</figcaption></a>
+					<p class = "heartDetail">
+						<span ng-click = "controller.heartImage(images)" class = "heart">
+							<span class = "heartNo">{{images.likes}}</span>
+							<i class="fa fa-heart heartIcon" aria-hidden="true"></i>
+						</span>
+						<a href="#/detail/{{images._id}}">
+							<span class = "detail">
+								<i class="fa fa-bars detailIcon" aria-hidden="true"></i>
+							</span> 
+						</a>
+					</p>
+					<img style="background-image:url({{images.url}})" src = 'https://dev.w3.org/2007/mobileok-ref/test/data/ROOT/GraphicsForSpacingTest/1/largeTransparent.gif'>
+
 				</figure>	
 			</div>
 		</div>

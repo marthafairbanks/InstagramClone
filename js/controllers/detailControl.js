@@ -6,13 +6,21 @@
     .controller('DetailController', function(API, $stateParams) {
        var vm = this;
 
+        vm.heartImage= function(image){
+          var like = API.heartImage(image._id);
+          like.then(function(response){
+          image.likes ++;
+            
+          });
+
+        };
 
        var imageDetails = API.getImageDetails($stateParams.imageid);
 
        imageDetails.then(function(results){
-        console.log(results);
        		vm.image = results.data;
        }); 
+
 
       
     });

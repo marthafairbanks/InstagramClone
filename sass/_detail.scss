@@ -1,5 +1,7 @@
 .rowDetail {
-			margin-top: 5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+
 	.detail {
 		background-color: white;
 		width: 80%;
@@ -10,13 +12,42 @@
 			padding-bottom: 15px;
 			.bigImage {
 				img {
-					width: 100%
+					width: 100%;
+					position: relative;
+					border-radius: 10px;
+				}
+				.heart {
+					x-index: 999;
+					position: absolute;
+					bottom: 0;
+					right: 0;
+
+					&:hover {
+						cursor: pointer;
+						animation: bounce 1.5s ease;
+ 						animation-iteration-count: 1;
+					}	
+					.heartNo {
+						color: white;
+						z-index: 1000;
+						position: absolute;
+						margin-left: 15px;
+						margin-top: 10px;
+						font-weight: bold;
+					}
+					.heartIcon {
+						color: $orange;
+						font-size: 40px;
+						}
 				}
 			}
 		}
 		.right {
 			padding-top: 15px;
 			padding-bottom: 15px;
+			h3 {
+				font-family: 'Sansita One', cursive;
+			}
 			.imageDetails {
 				margin: 20px;
 				

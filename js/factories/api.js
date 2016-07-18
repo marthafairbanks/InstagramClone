@@ -42,11 +42,33 @@
 
 				return getImages;
 		 	};
+
+
+		    function heartImage(id){
+		        
+		        var data = {
+		 			imageid: id,
+		 		};
+
+		        var likeImage = $http({
+		          method: 'POST',
+		          data: data, 
+		          headers:
+		          {
+		            X_CSRF_TOKEN: 'martha',
+		          },
+		          url: 'http://instagramcloneclass.herokuapp.com/images/vote'
+		          });
+
+		        return likeImage;
+		    }  
+
 		 	
 		 	return {
 		 		postImages:postImages,
 		 		getImages:getImages,
 		 		getImageDetails:getImageDetails,
+		 		heartImage:heartImage,
 		 	};
 
 		 

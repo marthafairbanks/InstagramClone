@@ -9,12 +9,19 @@
         var imageData = API.getImages();
 
        	imageData.then(function(results){
-       		console.log(results);
        		var images = results.data.images;
        		vm.images = images;
 
-       });
+        });
+        
+        vm.heartImage= function(image){
+          var like = API.heartImage(image._id);
+          like.then(function(response){
+          image.likes ++;
+            
+          });
 
+        };
       
     });
 })();
