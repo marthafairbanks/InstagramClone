@@ -72,8 +72,8 @@ header .rowNav {
           color: white;
           z-index: 1000;
           position: absolute;
-          margin-left: 15px;
-          margin-top: 10px;
+          margin-left: 16px;
+          margin-top: 9px;
           font-weight: bold; }
         .rowHome .home .allImages figure .heartDetail .heart .heartIcon {
           color: #fe4b2e;
@@ -118,8 +118,8 @@ header .rowNav {
           color: white;
           z-index: 1000;
           position: absolute;
-          margin-left: 15px;
-          margin-top: 10px;
+          margin-left: 16px;
+          margin-top: 9px;
           font-weight: bold; }
         .rowDetail .detail .left .bigImage .heart .heartIcon {
           color: #fe4b2e;

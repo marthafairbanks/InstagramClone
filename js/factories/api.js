@@ -4,6 +4,7 @@
 		.module('instagram')
 		 .factory('API', function($http) {
 		 	
+		 	//functions dealing with data exchanges with the api
 		 	var postImages = function(data) {
 		 		var postImages = $http({
 				  method: 'POST',
